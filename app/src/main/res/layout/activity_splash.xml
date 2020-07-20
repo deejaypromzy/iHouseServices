@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".Splash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/pro_txt"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            xmlns:font="http://schemas.android.com/apk/lib/com.thoughtworks.retailshop.util"
+            android:id="@+id/pro_txt"
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo_img"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="#2d5000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1.0"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            font:ttf_name="paranoid.ttf" />
+
+        <TextView
+            android:id="@+id/track_txt"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pro_txt"
+            android:layout_below="@+id/pro_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1.0"
+            android:text="we connect your home"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <!--<com.projectwork.adp.digitaleducation.splash.ParticleView-->
+        <!--android:id="@+id/pv_4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--pv:pv_host_text="Digital Education Africa"-->
+        <!--pv:pv_host_text_anim_time="2000"-->
+        <!--pv:pv_host_text_size="30sp"-->
+        <!--pv:pv_particle_text="DE"-->
+        <!--pv:pv_particle_text_size="30sp"-->
+        <!--pv:pv_spread_anim_time="2000"-->
+        <!--pv:pv_text_anim_time="2000"-->
+        <!--pv:pv_text_color="#FFF" />-->
+    <!--
+        <com.projectwork.secure.handlers.mkloader.MKLoader
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:mk_type="TwinFishesSpinner"
+            android:id="@+id/MKLoader" />
+    -->
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/MKLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:mk_color="#9da600"
+        app:mk_type="TwinFishesSpinner" />
+
+
+
+</RelativeLayout>

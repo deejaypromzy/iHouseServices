@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/fab_margin"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAllCaps="true"
+    android:fontFamily="serif"
+    android:padding="@dimen/fab_margin"
+    android:background="@drawable/shape"
+    style="@style/Base.TextAppearance.AppCompat.Large"
+    android:layout_marginBottom="50dp"
+    android:text="Make Payment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+android:textStyle="bold"            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Mode of Payment :"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Account Number"/>
+    <EditText
+        android:id="@+id/amt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount in GHC"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemLay2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:id="@+id/pay"
+            android:background="@color/colorAccent"
+            android:paddingStart="@dimen/fab_margin"
+            android:paddingEnd="@dimen/fab_margin"
+            android:text="Confirm Payment"
+            android:onClick="confirm"
+            android:textColor="@android:color/white"
+            android:textSize="9dp" />
+        <!--<Button-->
+        <!--style="@style/Widget.AppCompat.Button.Borderless.Colored"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="5dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/btnMsg"-->
+        <!--android:background="@drawable/shape_transparent"-->
+        <!--android:drawableStart="@drawable/msg"-->
+        <!--android:paddingStart="@dimen/fab_margin"-->
+        <!--android:paddingEnd="@dimen/fab_margin"-->
+        <!--android:text="Message Provider"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="9dp" />-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_dark"
+            android:textSize="9dp"
+            android:id="@+id/btnChat"
+            android:onClick="cancel"
+            android:paddingStart="@dimen/fab_margin"
+            android:paddingEnd="@dimen/fab_margin"
+            android:text="cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

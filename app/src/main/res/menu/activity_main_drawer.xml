@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Products">
+        <menu>
+            <item
+                android:id="@+id/buy"
+                android:icon="@drawable/info"
+                android:title="Services" />
+
+
+            <item
+                android:id="@+id/requests"
+                android:icon="@drawable/login"
+                android:title="Services Requests" />
+            <item
+                android:id="@+id/sell"
+                android:icon="@drawable/plus"
+                android:title="Add Service" />
+        </menu>
+    </item>   <item android:title="Personal Info">
+        <menu>
+            <item
+                android:id="@+id/edit"
+                android:icon="@drawable/male"
+                android:title="Edit Information" />
+            <item
+                android:id="@+id/changePassword"
+                android:icon="@drawable/password"
+                android:title="Change Password" />
+        </menu>
+    </item>   <item android:title="Admin Only">
+        <menu>
+            <item
+                android:id="@+id/addAdmin"
+                android:icon="@drawable/male"
+                android:title="Add Administrators" />
+            <item
+                android:id="@+id/approve"
+                android:icon="@drawable/manage"
+                android:title="Approve Service" />
+            <item
+                android:id="@+id/manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Manage Services" />
+        </menu>
+    </item>
+
+</menu>
